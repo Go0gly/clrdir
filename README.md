@@ -95,19 +95,6 @@ If you want to use the installation script to install `clrdir`, then run the fol
 sudo sh install_unix.sh
 ```
 
-**Windows**  
-Unfortunately, Windows isn't properly supported yet, but I am working on it.  
-
-When you are done installing `clrdir` move back to your parent directory by running:
-```bash
-cd ..
-```
-And then test out `clrdir` by running the following:
-```bash
-clrdir clrdir
-```
-This will delete the source code. But don't worry, you don't need it anymore
-
 ## Manual Install
 If you want to do a manual install of `clrdir`, then you should decide whether you want to customize your installation of `clrdir`. If you don't want any customization, then you should probably just run the install script.  
 
