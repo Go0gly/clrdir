@@ -13,11 +13,12 @@ for index,arg in enumerate(args):
     if index == 0 and arg not in keywords:
         path = arg
     elif arg == "-h" or arg == "--help":
-        print("clrdir [DIRECTORY: REQUIRED - path] [-i, --ignore: OPTIONAL - args] [-rm, --rmdir: OPTIONAL - toggle] [-h, --help: OPTIONAL - toggle]")
-        print("DIRECTORY -- The directory that gets cleared")
-        print("-i, --ignore [args] -- Files/directories to ignore when clearing the directory")
-        print("-rm, --rmdir -- Off by default, deletes the specified directory if on")
-        print("-h, --help -- Prints this menu")
+        print(f"Usage: {sys.argv[1]} <DIRECTORY> [OPTIONS]")
+        print("\tDIRECTORY -- The directory that gets cleared")
+        print("\tOPTIONS:")
+        print("\t\t-i, --ignore [args] -- Files/directories to ignore when clearing the directory")
+        print("\t\t-rm, --rmdir -- Off by default, deletes the specified directory if on")
+        print("\t\t-h, --help -- Prints this menu")
     elif arg == "-i" or arg == "--ignore":
         for _ in args[index+1::]:
             if _ not in keywords:
